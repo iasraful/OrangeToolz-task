@@ -1,0 +1,426 @@
+/* Global selectors */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #26262e;
+  background: #f9f9f9;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 9rem 1fr;
+}
+
+/* Side Menu */
+.side-menu {
+  grid-row: 1 / -1;
+  grid-column: 1fr;
+  background: #000;
+}
+.side-menu {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+.side-menu > .brand-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+.side-menu > .brand-name > img {
+  width: 12.5rem;
+  height: 6.8rem;
+}
+.side-menu ul > li {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  margin: 2rem 0 2rem 2rem;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  cursor: pointer;
+  color: #7d7d7e;
+}
+.side-menu ul > li:hover {
+  border-right: 3px solid #ff7901;
+}
+ul > li > img {
+  margin-right: 1rem;
+  margin-left: 3rem;
+  padding: 1rem;
+}
+ul > li > img :hover {
+  fill: #ff7901;
+}
+/* Top Header */
+.header {
+  grid-column: 2/-1;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .top-nav .nav-user {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.nav-user {
+  width: 20rem;
+  height: 6rem;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 4.5rem;
+  position: relative;
+  z-index: 20;
+}
+/* Nav User Collapse / Dropdown */
+.nav-user-collapse {
+  position: absolute;
+  top: 3.5rem;
+  right: 3rem;
+  width: 20rem;
+  height: 29.7rem;
+  z-index: 10;
+  background: #ffffff;
+  border: 1px solid #f2f2f4;
+  box-shadow: 0px 30px 20px -20px rgba(198, 211, 232, 0.2);
+  border-radius: 1rem;
+  display: none;
+}
+.active {
+  display: block;
+}
+.nav-user-collapse .user-collapse-menu {
+  margin-top: 5rem;
+}
+.nav-user-collapse .user-collapse-menu li {
+  color: #7d7d7e;
+  list-style: none;
+  height: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+.nav-user-collapse .user-collapse-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 2rem;
+  padding: 1rem 1.6rem;
+  width: 16rem;
+  background: rgba(255, 1, 1, 0.1);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #ff5e5e;
+}
+
+/* Nav User Collapse / Dropdown END */
+
+.nav-user h3 {
+  color: #26262e;
+}
+
+.top-nav p {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.top-nav p span {
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #ff7901;
+  margin-left: 1rem;
+}
+
+.contain {
+  grid-column: 2/-1;
+  margin: 3rem;
+}
+
+/* User in contain Layout section */
+.contain .user {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 33.4rem 65.9rem;
+  gap: 3rem;
+}
+.contain .user-cards {
+  grid-column: 2/-1;
+}
+.contain .profile-setting {
+  grid-column: 1/ -1;
+  grid-row: 2/ -1;
+  background: #ffff;
+}
+.contain .user-details {
+  background: #ffff;
+  grid-column: 1 / 2;
+}
+/* User in contain Layout section END */
+
+.user-details {
+  background: #ffffff;
+  border: 1px solid #f2f2f4;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-items .user-name {
+  height: 3.8rem;
+  top: 15.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.8rem;
+  color: #26262e;
+}
+
+.user-items p {
+  color: #7d7d7e;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* User Cards section */
+.user-cards {
+  height: 33.4rem;
+  background: #fff;
+  border: 1px solid #f2f2f4;
+  border-radius: 1rem;
+}
+.user-cards .cards-aria {
+  padding: 7rem 3rem;
+}
+.user-cards .cards-aria h3 {
+  color: #26262e;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+.cards-aria .cards-groupe {
+  display: flex;
+  flex-grow: 1;
+}
+.single-card {
+  margin: 1rem 0 0 3rem;
+  background: #ffffff;
+  color: #7d7d7e;
+  border: 1px solid #f2f2f4;
+  border-radius: 1rem;
+  height: 15.4rem;
+  flex-basis: 38.7rem;
+  position: relative;
+}
+.single-card:hover {
+  border: 1px solid #ff7901;
+}
+.single-card:first-child {
+  margin-left: 0px;
+}
+.single-card > h3 {
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  margin: 3rem 0 0 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #7d7d7e;
+}
+.single-card > p {
+  width: 17.2rem;
+  height: 3.2rem;
+  margin: 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #bdbdbd;
+}
+.card-delete {
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background: #f2f2f4;
+  border-radius: 4rem;
+  cursor: pointer;
+  border: none;
+}
+.single-card:hover .card-delete {
+  background-color: #ffd7d7;
+}
+.card-delete-icon {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 0.7rem;
+  top: 0.7rem;
+}
+
+.profile-settings-options {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 4.8rem;
+  margin-top: 3rem;
+}
+.profile-settings-option {
+  padding: 1rem 1.6rem;
+  color: #26262e;
+  cursor: pointer;
+  position: relative;
+}
+.profile-settings-option:hover {
+  transition: 0.2s;
+  color: #ff7901;
+  border-bottom: 2px solid #ff7901;
+  border-radius: 10px 10px 0px 0px;
+}
+.profile-setting > .border {
+  border: 2px solid #f2f2f4;
+}
+
+/* Profile Settings > Email Option and Elements */
+
+/* Email  */
+.email-option {
+  max-width: 100rem;
+  margin: 5rem auto;
+  border-bottom: 2px solid #f2f2f4;
+}
+
+/* Email-option Elements */
+.email-option .email-option-elements {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3.2rem;
+}
+.email-option-elements h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #26262e;
+}
+/* checkBox > email-option-switch */
+.email-option-switch {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 3rem;
+  margin: 0 2rem;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: 0.4s;
+  border: 1px solid #ff7901;
+  border-radius: 3rem;
+}
+.email-option-switch input {
+  display: none;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  background-color: #ff7901;
+  transition: 0.4s;
+  border-radius: 5rem;
+}
+input:checked + .slider {
+  background-color: #ff7901;
+}
+input:checked + .slider:before {
+  transform: translateX(2rem);
+  background-color: #ffff;
+}
+
+/* Email option > Send Email */
+.send-email {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  display: flex;
+  justify-content: flex-end;
+  color: #7d7d7e;
+}
+.send-email-label {
+  margin-left: 3rem;
+}
+.send-email-label > input {
+  border: none;
+  width: 45rem;
+  height: 6rem;
+  padding: 1.4rem 2rem;
+  /* White */
+  background: #ffffff;
+  /* #F2F2F4 */
+  border: 1px solid #f2f2f4;
+  border-radius: 1rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #bdbdbd;
+}
+.email-option > button {
+  padding: 1rem 1.6rem;
+  gap: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  width: 15rem;
+  height: 4.8rem;
+  border: none;
+  color: #ffff;
+  background: #ff7901;
+  box-shadow: 0 2rem 5rem rgba(255, 121, 1, 0.3);
+  border-radius: 0.5rem;
+}

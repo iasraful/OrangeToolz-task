@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrangeToolz Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-menu">
+        <div class="brand-name">
+          <img src="./asset/icons/Group 10072.svg" alt="" />
+        </div>
+        <ul>
+          <li>
+            <i></i>
+            <img
+              src="./asset/icons/home-svgrepo-com.svg"
+              alt="Dashboard"
+            />Dashboard
+          </li>
+          <li>
+            <img src="./asset/icons/search-svgrepo-com 1.svg" alt="Lookup" />
+            Lookup
+          </li>
+          <li><img src="./asset/icons/Group.svg" alt="Files" /> Files</li>
+          <li><img src="./asset/icons/XMLID_227_.svg" alt="Logs" />Logs</li>
+          <li>
+            <img src="./asset/icons/buy-button 1.svg" alt="Buy Credits" />Buy
+            Credits
+          </li>
+          <li>
+            <img
+              src="./asset/icons/distribute 1.svg"
+              alt="Integrations"
+            />Integrations
+          </li>
+          <li>
+            <img src="./asset/icons/user 1.svg" alt="My Profile" />My Profile
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="container"> -->
+
+      <!-- Top Header -->
+      <header class="header">
+        <div class="top-nav">
+          <div>
+            <p>Balance : <span> $125</span></p>
+          </div>
+          <div class="nav-user">
+            <img src="./asset/img/unsplash_6W4F62sN_yI.png" alt="User Image" />
+            <h3>Alexa Jui</h3>
+            <img src="./asset/icons/Vector 97.svg" alt="" />
+          </div>
+          <div class="nav-user-collapse">
+            <ul class="user-collapse-menu">
+              <li>My Profile</li>
+              <li>Add Fund</li>
+              <li>API Documentation</li>
+              <li>Log Out</li>
+              <button>Log Out</button>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="contain">
+        <!-- User content section -->
+        <div class="user">
+          <div class="user-details">
+            <div class="user-items">
+              <img src="./asset/img/unsplash.png" alt="User" />
+              <h3 class="user-name">Alexa Jui</h3>
+              <p class="user-email">alexajui@gmail.com</p>
+              <p class="user-cell-number">+1 354785 4125</p>
+              <p class="user-address">3213 D Street, Columbus, USA</p>
+            </div>
+          </div>
+          <div class="user-cards">
+            <div class="cards-aria">
+              <h3>Your Credit Cards</h3>
+              <div class="cards-groupe">
+                <div class="single-card">
+                  <button class="card-delete">
+                    <img
+                      class="card-delete-icon"
+                      src="./asset/icons/delete 1.svg"
+                      alt="Delete"
+                    />
+                  </button>
+
+                  <h3>Credit Card 1</h3>
+                  <p>xxxxxxxxxxxx4684</p>
+                </div>
+                <div class="single-card">
+                  <button class="card-delete">
+                    <img
+                      class="card-delete-icon"
+                      src="./asset/icons/delete 1.svg"
+                      alt="Delete"
+                    />
+                  </button>
+                  <h3>Credit Card 2 (Default)</h3>
+                  <p>xxxxxxxxxxxx4242</p>
+                </div>
+                <div class="single-card">
+                  <button class="card-delete">
+                    <img
+                      class="card-delete-icon"
+                      src="./asset/icons/delete 1.svg"
+                      alt="Delete"
+                    />
+                  </button>
+                  <h3>Credit Card 3</h3>
+                  <p>xxxxxxxxxxxx1254</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-setting">
+            <div class="profile-settings-options">
+              <div class="profile-settings-option">Update Profile</div>
+              <div class="profile-settings-option">Change Password</div>
+              <div class="profile-settings-option">Email Notifications</div>
+              <div class="profile-settings-option">Auto Recharge Settings</div>
+            </div>
+            <div class="border"><span></span></div>
+
+            <!-- From Section -->
+            <form class="email-tabs">
+              <!-- Email first options -->
+              <div class="email-option">
+                <div class="email-option-elements">
+                  <label class="email-option-switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <h3>Notify me when list verification completes</h3>
+                </div>
+                <div class="email-option-elements">
+                  <label class="email-option-switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <h3>Notify me when list export completes</h3>
+                </div>
+                <div class="email-option-elements">
+                  <label class="email-option-switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <h3>
+                    Notify me when list verification result is about to expire
+                  </h3>
+                </div>
+              </div>
+              <!-- Email Second Options -->
+              <div class="email-option">
+                <div class="email-option-elements">
+                  <label class="email-option-switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <h3>Receive Low Credits Email</h3>
+                </div>
+                <div class="send-email">
+                  <div class="send-email-label">
+                    <label>Send Email to*:</label>
+                    <br />
+                    <input type="email" value="alexajui@gmail.com" />
+                  </div>
+                  <div class="send-email-label">
+                    <label>When credits are less than*:</label>
+                    <br />
+                    <input type="number" value="50" /><br /><br />
+                  </div>
+                </div>
+                <button type="submit" value="Submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
